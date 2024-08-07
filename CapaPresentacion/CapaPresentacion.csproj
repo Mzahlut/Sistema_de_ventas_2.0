@@ -166,6 +166,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -177,6 +178,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\green-check-mark-icon-in-round-shape-design-png.webp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -190,6 +192,9 @@
       <Project>{9a853925-033f-437b-ac8c-1119d84064e7}</Project>
       <Name>CapaNeogcio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-delete-remove-cross-red-cancel-abort-error-red-cross-thumbnail.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
