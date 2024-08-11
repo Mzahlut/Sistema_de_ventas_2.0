@@ -254,6 +254,7 @@
             this.btnClean.TabIndex = 17;
             this.btnClean.Text = "Limpiar";
             this.btnClean.UseVisualStyleBackColor = false;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnEliminar
             // 

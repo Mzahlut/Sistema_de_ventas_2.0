@@ -225,10 +225,6 @@ namespace CapaPresentacion
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
-          
-
-
-
             if (Convert.ToInt32(txtId.Text) != 0)
             {
                 if (MessageBox.Show("¿Desea eliminar el usuario?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -296,6 +292,11 @@ namespace CapaPresentacion
                 row.Visible = true;
             }
 
+        }
+
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
     }
