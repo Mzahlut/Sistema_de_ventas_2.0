@@ -68,6 +68,7 @@
             this.btnSearch = new FontAwesome.Sharp.IconButton();
             this.btnClear = new FontAwesome.Sharp.IconButton();
             this.txtIndice = new System.Windows.Forms.TextBox();
+            this.btnExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsers)).BeginInit();
             this.SuspendLayout();
@@ -277,6 +278,7 @@
             // dataGridUsers
             // 
             this.dataGridUsers.AllowUserToAddRows = false;
+            this.dataGridUsers.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -383,6 +385,7 @@
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(233, 47);
             this.label9.Name = "label9";
@@ -471,12 +474,26 @@
             this.txtIndice.Text = "-1";
             this.txtIndice.Visible = false;
             // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.Color.LightGray;
+            this.btnExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExcel.Location = new System.Drawing.Point(240, 106);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(123, 23);
+            this.btnExcel.TabIndex = 28;
+            this.btnExcel.Text = "Descargar excel";
+            this.btnExcel.UseVisualStyleBackColor = false;
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1184, 503);
+            this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.txtIndice);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSearch);
@@ -555,5 +572,6 @@
         private FontAwesome.Sharp.IconButton btnSearch;
         private FontAwesome.Sharp.IconButton btnClear;
         private System.Windows.Forms.TextBox txtIndice;
+        private System.Windows.Forms.Button btnExcel;
     }
 }
