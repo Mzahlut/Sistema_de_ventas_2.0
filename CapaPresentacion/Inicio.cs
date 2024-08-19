@@ -97,6 +97,9 @@ namespace CapaPresentacion
             abrirFormulario(menuConfiguracion, new frmCategoria());
         }
 
+       
+
+
         private void subMenuProducto_Click(object sender, EventArgs e)
         {
             abrirFormulario(menuConfiguracion, new frmProducto());
@@ -147,6 +150,16 @@ namespace CapaPresentacion
 
             abrirFormulario((IconMenuItem)sender, new frmReportes());
 
+        }
+
+        private void MenuTitulo_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void subMenuNegocio_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(menuConfiguracion, new frmNegocio());
         }
     }
 }
